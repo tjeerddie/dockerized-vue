@@ -4,19 +4,25 @@ Project to have a setup of vue with docker.
 
 ## docker setup
 
-To start the project for development in docker:
+### To start the project for development in docker:
 
 ``` bash
 docker-compose up --build
 ```
 
-To start the project for development in docker:
+### To start the project for development in docker:
 
 ``` bash
 docker-compose -f docker_compose-prod.yml up --build
 ```
 
 ## local setup
+
+### Pre-requisites
+
+- nodejs/npm
+
+### install packages
 
 ``` bash
 npm install
