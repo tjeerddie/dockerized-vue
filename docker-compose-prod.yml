@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/prod/Dockerfile
+    ports:
+      - '8080:80'
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    environment:
+      - NODE_ENV=production
+    networks:
+      - main
+
+networks:
+  main:
+    driver: bridge

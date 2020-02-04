@@ -14,4 +14,4 @@ WORKDIR /app
 # expose port 8080 to the host
 EXPOSE 8080
 
-CMD ["/app/start.sh"]
+CMD ["/app/docker/dev/start.sh"]
